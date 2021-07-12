@@ -1,5 +1,7 @@
-<h1 style="text-align: center;">What's Popular</h1>
-<h5 style="text-align: center;">- Current Trending Movies -</h5>
+<div class="container">
+  <div class="well well-lg" style="text-align: center;">Taylor Made Movies!</div>
+  </div>
+  <div style="text-align: center;"><h3>- Here's what's HOT -</h3></div>
 <hr>
 <app-movie-list *ngFor="let movie of movies" [content]="movie.overview" [title]="movie.title" [poster]="movie.poster"
   [movie_id]="movie.movie_id"></app-movie-list>

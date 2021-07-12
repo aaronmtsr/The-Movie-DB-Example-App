@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TrailersComponent implements OnInit {
   @Input() trailer_key?: string;
   @Input() trailer_name?: string;
+  
+
 
   constructor() {}
 

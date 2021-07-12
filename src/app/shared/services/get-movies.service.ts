@@ -10,7 +10,7 @@ export class GetMoviesService {
 
   getPopular(): any {
     return this.http.get<any>(
-      'https://api.themoviedb.org/3/movie/popular?api_key=<your_api_key_here>&language=en-US&page=1'
+      'https://api.themoviedb.org/3/movie/popular?api_key=b165f6099cee3c18aa44970ba5b7c4f9&language=en-US&page=1'
     );
   }
 
@@ -18,7 +18,7 @@ export class GetMoviesService {
     return this.http.get<any>(
       'https://api.themoviedb.org/3/movie/' +
         `${movie_id}` +
-        '/watch/providers?api_key=<your_api_key_here>'
+        '/watch/providers?api_key=b165f6099cee3c18aa44970ba5b7c4f9'
     );
   }
 
@@ -26,7 +26,7 @@ export class GetMoviesService {
     return this.http.get<any>(
       'https://api.themoviedb.org/3/movie/' +
         `${movie_id}` +
-        '/videos?api_key=<your_api_key_here>&language=en-US'
+        '/videos?api_key=b165f6099cee3c18aa44970ba5b7c4f9&language=en-US'
     );
   }
 }
